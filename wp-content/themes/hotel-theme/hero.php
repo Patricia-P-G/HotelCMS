@@ -53,8 +53,8 @@
     <div class="container-hero" <?php if ($heroImageUrl): ?>style="background-image: url('<?php echo esc_url($heroImageUrl); ?>');" <?php endif; ?>>
         <div class="container-hero-overlay"></div>
         <div class="container-hero-content">
-            <h1><?php echo esc_html($heroTitle); ?></h1>
-            <p><?php echo wp_kses_post($heroParagraph); ?></p>
+            <h1 class="hero-title"><?php echo esc_html($heroTitle); ?></h1>
+            <p class="hero-paragraph"><?php echo wp_kses_post($heroParagraph); ?></p>
 
             <?php if (!empty($heroButtonUrl) || !empty($heroButtonText)): ?>
                 <a class="hero-btn" href="<?php echo esc_url($heroButtonUrl ?: '#'); ?>" target="<?php echo esc_attr($heroButtonTarget); ?>"><?php echo esc_html($heroButtonText); ?></a>

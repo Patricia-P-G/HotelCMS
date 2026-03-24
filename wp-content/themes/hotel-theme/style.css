@@ -5,306 +5,319 @@ Version: 1.0
 Description: A simple hotel website theme built with WordPress.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-
 
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
-
 .pic-text {
-    margin-top: -.7rem;
-    background-color: #f0e6d2;
-    padding: 1rem;
+  margin-top: -0.7rem;
+  background-color: #f0e6d2;
+  padding: 1rem;
 }
 
 .pool {
-    border-bottom-right-radius: 20% 50%;
-    background-color: #64918c;
+  border-bottom-right-radius: 20% 50%;
+  background-color: #64918c;
 }
 
 .spa {
-    background-color: #ba8c5a;
+  background-color: #ba8c5a;
 }
 
 .restaurant {
-    /* background-color: #e6f0d2; */
-    background-color: #182b31;
-    color: #f0e6d2;
-    border-bottom-left-radius: 20% 50%;
+  /* background-color: #e6f0d2; */
+  background-color: #182b31;
+  color: #f0e6d2;
+  border-bottom-left-radius: 20% 50%;
 }
 
 .ammenities {
-    margin-bottom: 5rem;
-    grid-column-start: 2;
-    grid-column-end: 12;
-    display: flex;
-    flex-direction: column;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  display: flex;
+  flex-direction: column;
 }
 
 .picture-container {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .pic {
-    width: 450px;
-    height: 250px;
+  width: 450px;
+  height: 250px;
 }
 
-
-
 .pic-text {
-    font-size: 14px;
-    font-weight: 400;
-    opacity: 80%;
-    height: 150px;
-    width: 450px;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 80%;
+  height: 150px;
+  width: 450px;
 }
 
 .reviews {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-column-end: 12;
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  margin-bottom: 4rem;
 }
 
 .card-container {
-    margin-top: 1rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
+
 .card {
-    width: calc(50% - 0.5rem);  /* Change from 400px to scale with container */
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    padding: 1rem;
+  width: calc(50% - 0.5rem); /* Change from 400px to scale with container */
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem;
 }
+
 .card-person {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
+
 .card-details {
-    justify-content: start;
-    gap: 1.5rem;
-    align-items: center;
-    display: flex;
+  justify-content: start;
+  gap: 1.5rem;
+  align-items: center;
+  display: flex;
 }
+
 .testimonial-name {
-    font-weight: 500;
+  font-weight: 500;
 }
+
 .testimonial-date {
-    font-size: 12px;
-    opacity: 50%;
+  font-size: 12px;
+  opacity: 50%;
 }
+
 .testimonial-image {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
 }
+
 .testimonial-text {
-    font-style: italic;
-    opacity: 60%;
-    font-weight: 500;
+  font-style: italic;
+  opacity: 60%;
+  font-weight: 500;
 }
+
 .testimonial-rating {
-    margin-bottom: -0.5rem;
+  margin-bottom: -0.5rem;
 }
 
 .reviws_h {
-    display: flex;
-    align-items: start;
-    justify-content: start;
+  display: flex;
+  align-items: start;
+  justify-content: start;
 }
+
 .reviews_h-number {
-    margin-top: 0.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 0.5rem;
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
 }
 
 main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
-
 
 /* Hero Section */
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container-hero{
-    background-image: url("hotel-hero.jpg");
-    height: 100vh;
+.container-hero {
+  background-image: url("hotel-hero.jpg");
+  height: 100vh;
 }
 
-
-h1 {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 60px;
+.hero-title {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  padding-bottom: 20px;
 }
 
-p {
-    color: white;
-    font-size: 20px;
-    padding-bottom: 30px;
+.hero-paragraph {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 50px;
 }
-
 
 /* Hero Section */
 .container-hero {
-    position: relative;
-    height: 100vh; /* full screen */
-    background-image: url("hotel-hero.jpg");
-    background-size: cover; /* cover whole section */
-    background-position: center;
-    display: flex;
-    padding-left: 10%;
-    align-items: center;
-    overflow: hidden;
+  position: relative;
+  height: 100vh; /* full screen */
+  background-image: url("hotel-hero.jpg");
+  background-size: cover; /* cover whole section */
+  background-position: center;
+  display: flex;
+  padding-left: 10%;
+  align-items: center;
+  overflow: hidden;
 }
 
 /* Dark overlay for contrast */
 .container-hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5); /* dark transparent overlay */
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark transparent overlay */
+  z-index: 1;
 }
 
 .container-hero-content {
-    position: relative;
-    z-index: 9999;
-    color: white;
-    max-width: 800px;
-    animation: fadeIn 2s ease-in-out;
+  position: relative;
+  z-index: 9999;
+  color: white;
+  max-width: 800px;
+  animation: fadeIn 2s ease-in-out;
 }
 
 /* Button Styling */
 .hero-btn {
-    padding: 15px 35px;
-    font-size: 18px;
-    color: white;
-    background-color: #ff5a5f; /* nice accent color */
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  padding: 15px 35px;
+  font-size: 18px;
+  color: white;
+  background-color: #ff5a5f; /* nice accent color */
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .hero-btn:hover {
-    background-color: #ff8085;
-    transform: scale(1.05);
+  background-color: #ff8085;
+  transform: scale(1.05);
+  color: white;
 }
 
 /* Simple fade-in animation */
 @keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h3 {
-    margin: 0.5rem 0 0.5rem 0;
-    opacity: 100%;
+  margin: 0.5rem 0 0.5rem 0;
+  opacity: 100%;
 }
 
 p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 
 @media screen and (max-width: 1762px) {
-    .pic, .pic-text {
-        width: 400px;
-    }
+  .pic,
+  .pic-text {
+    width: 400px;
+  }
 }
 
-
 @media screen and (max-width: 1632px) {
-    .pic, .pic-text {
-        width: 380px;
-        font-size: 13px;
-    }
+  .pic,
+  .pic-text {
+    width: 380px;
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 1470px) {
-    .pic {
-        width: 330px;
-    }
+  .pic {
+    width: 330px;
+  }
 
-     .pic-text {
-        font-size: 12px;
-        width: 330px;
-        height: 150px;
-    }
+  .pic-text {
+    font-size: 12px;
+    width: 330px;
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 1266px) {
-    .pic {
-        width: 290px;
-    }
+  .pic {
+    width: 290px;
+  }
 
-     .pic-text {
-        font-size: 12px;
-        width: 290px;
-        height: 140px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
+  .pic-text {
+    font-size: 12px;
+    width: 290px;
+    height: 140px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 @media screen and (max-width: 1116px) {
-    .picture-container {
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
+  .picture-container {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 
-    .pic {
-        width: 400px
-    }
+  .pic {
+    width: 400px;
+  }
 
-    .pic-text {
-        width: 400px;
-        height: 150px;
-    }
+  .pic-text {
+    width: 400px;
+    height: 150px;
+  }
 }
 
 @media screen and (max-width: 1002px) {
-    .picture-container {
-        flex-direction: column;
-        gap: 2rem;
-        justify-content: center;
-        align-items: start;
-    }
+  .picture-container {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: start;
+  }
 
-    .pic {
-        width: 100%;
-        height: 500px;
-    }
+  .pic {
+    width: 100%;
+    height: 500px;
+  }
 
-    .pic-text {
-        font-size: 17px;
-        width: 100%;
-        height: 150px;
-    }
+  .pic-text {
+    font-size: 17px;
+    width: 100%;
+    height: 150px;
+  }
 }
