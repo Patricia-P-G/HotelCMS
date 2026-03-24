@@ -44,3 +44,85 @@ footer {
 main {
     flex: 1 0 auto;
 }
+
+
+/* Hero Section */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-hero{
+    background-image: url("hotel-hero.jpg");
+    height: 100vh;
+}
+
+
+h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+
+/* Hero Section */
+.container-hero {
+    position: relative;
+    height: 100vh; /* full screen */
+    background-image: url("hotel-hero.jpg");
+    background-size: cover; /* cover whole section */
+    background-position: center;
+    display: flex;
+    padding-left: 10%;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Dark overlay for contrast */
+.container-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* dark transparent overlay */
+    z-index: 1;
+}
+
+.container-hero-content {
+    position: relative;
+    z-index: 9999;
+    color: white;
+    max-width: 800px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Button Styling */
+.hero-btn {
+    padding: 15px 35px;
+    font-size: 18px;
+    color: white;
+    background-color: #ff5a5f; /* nice accent color */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #ff8085;
+    transform: scale(1.05);
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
