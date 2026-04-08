@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
     <?php
     if (function_exists('get_field')) {
         $heroTitle = get_field('hero_title');
@@ -22,6 +21,7 @@
         $heroButton = '';
         $heroImage = '';
     }
+
 
     $heroTitle = !empty($heroTitle) ? $heroTitle : 'Welcome to our hotel';
     $heroParagraph = !empty($heroParagraph) ? $heroParagraph : 'Experience comfort and luxury with us.';

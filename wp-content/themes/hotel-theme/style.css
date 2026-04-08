@@ -97,6 +97,10 @@ h2 {
   gap: 0.3rem;
 }
 
+.card-text{
+  padding-bottom: 50px;
+}
+
 .card-details {
   justify-content: start;
   gap: 1.5rem;
@@ -244,6 +248,13 @@ h3 {
 p {
   margin-bottom: 0;
 }
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1762px) {
   .pic,
