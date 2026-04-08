@@ -5,6 +5,7 @@
     <?php get_template_part('ammenities'); ?>
     <?php get_template_part('testimonials'); ?>
     <?php get_template_part('location'); ?>
+    <?php get_template_part('contact'); ?>
     
 </div>
 
