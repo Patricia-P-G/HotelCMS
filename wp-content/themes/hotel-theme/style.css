@@ -414,4 +414,6 @@ iframe {
 }
 .contact_svg{
   color: black;
+  cursor: pointer;
 }
+
