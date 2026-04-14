@@ -34,33 +34,9 @@
                         </li>
                     </ul>
                 </div>
-                <form class="d-flex navbar-form navbar-right">
-                    <input id="globalEventSearch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <a href="search.html" onclick="goToEvents()" class="btn btn-outline-success" type="submit">Search</a>
-                </form>
+                <?php get_search_form(); ?>
             </div>
         </nav>
     </header>
 
     <main>
-<script>
-function goToEvents() {
-    const query = document.getElementById('globalEventSearch').value.toLowerCase();
-    
-    // This sends the user to yoursite.com/events/
-    const targetUrl = "<?php echo home_url('/events/'); ?>";
-
-    if (query.includes('indoor') || query.includes('outdoor')) {
-        window.location.href = targetUrl;
-    } else {
-        alert('Try searching for "indoor" or "outdoor" to see our events.');
-    }
-}
-
-// Listen for the "Enter" key
-document.getElementById("globalEventSearch").addEventListener("keypress", function(e) {
-    if (e.key === "Enter") {
-        goToEvents();
-    }
-});
-</script>
